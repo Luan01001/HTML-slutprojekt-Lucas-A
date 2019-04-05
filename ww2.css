@@ -1,0 +1,55 @@
+/* CSS för att justera position (Flexbox) samt lägga in bakgrundsbild*/
+#bakgrund {
+    background-image: url(https://wallpapercave.com/wp/VcdBKJa.jpg);
+    height: 100vh;
+    padding: 0 15px;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+#bakgrund  h1{
+    background-color: rgb(227, 230, 234);
+    padding: 10px;
+    border: 2px solid;
+    border-bottom-style: none;
+    
+/* en till showcase css för att få bort överkanten*/
+}
+#bakgrund p {
+    border-top-style: none;
+    background-color: rgb(227, 230, 234);
+    padding: 10px;
+    border: 2px solid;
+}    
+
+.knapp {
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: black;
+    background-color: rgb(36, 59, 89)
+    
+}
+.knapp:hover{
+    background-color: gray;
+    color: black;
+}
+
+body {
+    margin: 0;
+    font-size: 20px;
+    color: black;
+}
+
+/* tar bort gap högst upp på sidan*/
+*{
+    margin: 0;
+    padding: 0;
+}
