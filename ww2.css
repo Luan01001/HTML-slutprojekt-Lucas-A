@@ -25,7 +25,7 @@
     padding: 10px;
     border: 2px solid;
 }    
-
+/* css för knappen */
 .knapp {
     text-decoration: none;
     font-size: 28px;
@@ -46,6 +46,9 @@ body {
     margin: 0;
     font-size: 20px;
     color: black;
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: #c0c1c4;
+
 }
 
 /* tar bort gap högst upp på sidan*/
@@ -53,3 +56,48 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: block;
+    background-image: linear-gradient(#111c2b,#3d6499);
+}
+/* Skapar en inre header så att alla delar i headern lokaliserar sig i mitten*/
+.inre_header {
+    width: 1000px;
+    height: 100%;
+    display:block;
+    margin: 0 auto;
+    background-image: linear-gradient(#111c2b,#3d6499);
+}
+
+.Rubrik h1 {
+    height: 100%;
+    color: white;
+    vertical-align: middle;
+/* globalmeny är css för den översta navigationsmenyn */
+}
+.globalmeny {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.globalmeny li {
+    float: left;
+}
+.globalmeny li a{
+    display: block;
+    color: rgb(162, 183, 216);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+.globalmeny li a:hover{
+    background-color: #3d4044
+}
+.active {
+    background-color: #3d4044
+}
+
+
