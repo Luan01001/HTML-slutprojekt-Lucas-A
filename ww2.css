@@ -182,10 +182,13 @@ footer {
 
 
 /*--trespaltslayout inblandade länder sidan--*/
+#bakgrund3 {
+    background-image: url(https://wallpaperplay.com/walls/full/2/3/7/311532.jpg);
+}
 .column {
     float: left;
     padding: 30px;
-    height: 400px;
+    height: 550px;
     position: relative;
     top: 5em;
     margin: 0px 20px;
@@ -195,12 +198,14 @@ footer {
     width: 30%;
  }
  .axelmakterna {
-     background-color: red;   
+     background-color: #5b1518;   
      width: 30%;
+     color: white;
  }
  .allierade {
-     background-color: blue;
+     background-color:#162f59;
      width: 30%;
+     color: white;
  }
 .rader:after {
     content: "";
@@ -219,3 +224,39 @@ footer {
   .rund {
       border-radius: 15px;
   }
+
+  /* lokal meny viktiga slag */
+ 
+  .lokalmeny {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    background-color: rgb(163, 130, 48);
+    border: 2px solid black;
+    position: absolute;
+    left: 0%;
+    bottom: 45%;
+    
+}
+.lokalmeny li {
+    border-bottom: 2px solid black;
+
+}
+.lokalmeny li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 1.5vh;
+}
+.lokalmeny li:last-child {
+    border-bottom: none;
+}
+.lokalmeny li a:hover{
+    background-color: #3d4044;
+    color: white;
+}
+
+.lokalmenyactive {
+    background-color: #3f789b;
+}
