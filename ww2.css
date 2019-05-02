@@ -115,9 +115,9 @@ body {
     position:absolute;
     height: 76%;
     width: 60%;
-    bottom: 15%;
+    bottom: 18%;
     left: 20%;
-    opacity: 0.95;
+    opacity: 0.97;
     background-color: gray;
     color: black;
     padding-left: 50px;
@@ -154,7 +154,7 @@ footer {
     position: fixed;
     bottom: 0%;
     left: 0%;
-    padding: 10px 0px;
+    padding: 0.8vh;
     
     
 }
@@ -232,11 +232,13 @@ footer {
     margin: 0;
     padding: 0;
     float: left;
-    background-color: rgb(163, 130, 48);
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     border: 2px solid black;
     position: absolute;
     left: 0%;
-    bottom: 45%;
+    bottom: 50%;
+    width: 15%;
     
 }
 .lokalmeny li {
@@ -258,5 +260,21 @@ footer {
 }
 
 .lokalmenyactive {
-    background-color: #3f789b;
+    background: linear-gradient(to left, #373b44, #4286f4);
+}
+
+/* statistik tabeller */
+table,th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 0.5vw;
+}
+tr:nth-child(even) {
+    background-color: #162f59;
+    color: white;
+}
+tr:nth-child(odd) {
+    background-color: #526991;
 }
