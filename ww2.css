@@ -128,22 +128,22 @@ body {
     height: 20vh;
     position: absolute;
     right: 20%;
-    top: 62%;
+    top: 68%;
 }
 .ingångstext{
     position: absolute;
     right: 23%;
-    top: 87%;
+    top: 95%;
 }
 .soldatbild {
     position: absolute;;
     left: 8em;
-    top: 25em;
+    top: 24em;
 }
 .soldattext {
     position: absolute;
     left: 8em;
-    top: 43em;
+    top: 41em;
 }
 
 
@@ -206,6 +206,11 @@ footer {
      background-color:#162f59;
      width: 30%;
      color: white;
+ }
+ .allieradeflaggor {
+     position:absolute;
+     left: 21vw;
+     top: 34vh;
  }
 .rader:after {
     content: "";
@@ -271,10 +276,24 @@ table,th, td {
 th, td {
     padding: 0.5vw;
 }
+/* varannan rad är olika färger, blir en zebratabell */ 
 tr:nth-child(even) {
     background-color: #162f59;
     color: white;
 }
 tr:nth-child(odd) {
     background-color: #526991;
+}
+.auschwitzbild {
+    height: 20vh;
+    width: 20vw;
+    position: absolute;
+    bottom: 16vh;
+    border-radius: 15px;
+}
+.auschwitztext {
+    position: absolute;
+    left: 24vw;
+    bottom: 16vh;
+    width: 30vw;
 }
