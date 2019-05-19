@@ -37,6 +37,7 @@
     background-color: rgb(36, 59, 89)
     
 }
+/* när man håller över knappen så ändras bakgrundsfärgen och textfärgen*/
 .knapp:hover{
     background-color: gray;
     color: black;
@@ -49,6 +50,9 @@ body {
     font-family: Tahoma, Geneva, sans-serif;
     background-color: #c0c1c4;
 
+}
+p {
+    margin: 5px;
 }
 
 /* tar bort gap högst upp på sidan*/
@@ -94,16 +98,30 @@ body {
     text-decoration: none;
     padding: 10px;
 }
+/* när man håller över en del i menyn så ändras bakgrundsfärgen*/
 .globalmeny li a:hover{
     background-color: #3d4044
 }
 
+/* den sidan man är inne på får en grå bakgrundsfärg i menyn*/
 .active {
     background-color: #3d4044
 }
 /*slutar*/
-
-
+/* css för formulär i footern */
+.navform {
+    position:absolute;
+    right: 4rem;
+    top: 1rem;
+    color: rgb(158, 120, 26);
+    width: 20%;
+}
+.submitknapp {
+    position: absolute;
+    right: 10%;
+    top: 70%;
+/* slutar */
+}
 .container {
     position: relative;
 }
@@ -111,8 +129,9 @@ body {
     width: 100%;
     height: 100%;
 }
+/* bakgrundsrutan på nästan alla sidor*/
 .grå-ruta{
-    position:absolute;
+    position: absolute;
     height: 76%;
     width: 60%;
     bottom: 18%;
@@ -125,15 +144,15 @@ body {
 }
 /*--startsida bilder--*/
 .ingångsbild{
-    height: 20vh;
+    height: 25%;
     position: absolute;
     right: 20%;
-    top: 68%;
+    top: 50vh;
 }
 .ingångstext{
     position: absolute;
     right: 23%;
-    top: 95%;
+    top: 72vh;
 }
 .soldatbild {
     position: absolute;;
@@ -178,6 +197,14 @@ footer {
 .footermeny li a:hover{
     background-color: #3d4044
 }
+.sidinformation {
+    position: absolute;
+    color: goldenrod;
+    font-size: 75%;
+    top: 30%;
+    left: 60%;
+}
+
 /*--footer slutar--*/
 
 
@@ -198,7 +225,7 @@ footer {
     width: 30%;
  }
  .axelmakterna {
-     background-color: #5b1518;   
+     background-color: hsl(357, 63%, 22%);
      width: 30%;
      color: white;
  }
@@ -210,7 +237,7 @@ footer {
  .allieradeflaggor {
      position:absolute;
      left: 21vw;
-     top: 34vh;
+     top: 54%;
  }
 .rader:after {
     content: "";
@@ -218,25 +245,19 @@ footer {
     clear: both;
 }
 
-/* gör sidan responsiv, när skärmen är mindre än 600px bred så lägger sig rutorna på varandra*/
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
-
-  /* runda kanter */
+  /* runda hörn */
   .rund {
-      border-radius: 15px;
+      border-radius: 3ex;
   }
 
   /* lokal meny viktiga slag */
- 
+
   .lokalmeny {
     list-style-type: none;
     margin: 0;
     padding: 0;
     float: left;
+    /* skapar en gradient för lokalmenyn*/
     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     border: 2px solid black;
@@ -269,12 +290,29 @@ footer {
 }
 
 /* statistik tabeller */
+table {
+    position: absolute;
+    top: 15%;
+}
 table,th, td {
     border: 1px solid black;
     border-collapse: collapse;
+    vertical-align: middle;
 }
 th, td {
     padding: 0.5vw;
+}
+/* statistik bild och text */
+.statistiktext {
+    position: absolute;
+    bottom: 20%;
+    left: 23%;
+    width: 50%;
+}
+.sectionrubrik {
+    position: absolute;
+    left: 25%;
+    top: 70%;
 }
 /* varannan rad är olika färger, blir en zebratabell */ 
 tr:nth-child(even) {
@@ -284,16 +322,168 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background-color: #526991;
 }
+/* iframe youtube video */
+iframe {
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    right: 35%;
+    top: 78%;
+    border-radius: 5px;
+}
+/*bild och bildtext förintelse sidan */
 .auschwitzbild {
     height: 20vh;
     width: 20vw;
     position: absolute;
-    bottom: 16vh;
+    top: 50%;
+    left: 25%;
     border-radius: 15px;
+}
+/* bild, text och rutpositioner och storlekar börjar */
+.auschwitz4 {
+    position: absolute;
+    left: 55%;
+    top: 48%;
 }
 .auschwitztext {
     position: absolute;
-    left: 24vw;
-    bottom: 16vh;
-    width: 30vw;
+    left: 38vw;
+    top: 50%;
+    width: 29vw;
 }
+.treblinkabild {
+    height: 18%;
+    width: 30%;
+    position: absolute;
+    right: 68%;
+    top: 75%;
+}
+.treblinkatext {
+    width: 50%;
+    position: absolute;
+    left: 33%;
+    top: 75%;
+}
+.treblinkah4 {
+    position: absolute;
+    left: 2%;
+    top: 72%;
+}
+.grå-ruta-stor{
+    position:absolute;
+    height: 90vh;
+    width: 70%;
+    top: 5%;
+    left: 15%;
+    opacity: 0.97;
+    background-color: gray;
+    color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/* slutar */
+
+/* Sverige under andravärldskriget  */ 
+#bakgrund4 {
+    background-image: url(https://images.interactives.dk/panther_start-5EcduwP0nUx2a1doy-xzNQ.jpg?auto=compress&ch=Width%2CDPR&dpr=2.63&ixjsv=2.2.4&q=38&rect=27%2C0%2C1445%2C1000&w=420);
+}
+.vänsterswe { /* ordnar vänsterrutan */
+    background-image: linear-gradient(to right bottom, #53647e, #3d5075, #2b3c6b, #1c275f, #121251); /* gradient går från höger till botten*/ 
+    border-radius: 2px;
+    width: 60%;
+    color: white;
+    position: absolute;
+    right: 35%;
+    top: 20%;
+}
+.högerswe { /* ordnar högerrutan */
+    background-image: linear-gradient(to left top, #53647e, #3d5075, #2b3c6b, #1c275f, #121251);
+    width: 25%;
+    color: white;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+}     
+input:out-of-range { /* gör att rutans border blir röd när fel värde matas in*/
+    border: 2px solid red;
+}
+
+@keyframes Flagga {
+    0%   {left:0px; top:30rem;}
+    50%  {left:40rem; top:30rem;}
+    100% {left:00px; top:30rem;}
+}
+
+.animation { /* flagganimationen */
+    position: absolute;
+    animation-name: Flagga;
+    animation-duration: 5s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite; /* gör att animationen repeteras oändligt*/
+   
+} /* ändrar storlek på flaggan */
+.flaggstorlek {
+    width: 30%;
+}
+.grå-ruta-efterkriget{
+    position:absolute;
+    height: 65rem;
+    width: 70%;
+    top: 5%;
+    left: 15%;
+    opacity: 0.97;
+    background-color: gray;
+    color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#bakgrund5 {
+    background-image: url(https://static.ons.gov.uk/visual/2015/05/HU_041808.jpg);
+}
+.berlinmuren {
+    width: 40%;
+    height: 25%;
+}
+/* hänvisar till en del på sidan och ger en svart kant runt */
+p:target {
+    border: 2px solid black;
+}
+.efter::after {
+    content: " - Framför allt den yngre generationen."
+}
+input:checked {
+    width: 20px;
+    height: 20px;
+}
+/* media queries och responsivitet */
+
+  @media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+  @media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }

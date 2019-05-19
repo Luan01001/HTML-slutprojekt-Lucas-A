@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +7,23 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="ww2.css">
     <script src="main.js"></script>
-    <title>Viktiga slag - startsida</title>
+    <title>Tidslinje</title>
 </head>
 <body>
- <header>
+    <!--header-->
+ <header role="banner">
     <div class="header">
         <div class="inre_header">
             <div class="Rubrik">
-                <h1> Viktiga slag - Andra världskriget</h1>
+                <h1> Tidslinje - Andra världskriget</h1>
                
             </div>
-            <nav>
+            <!--navigationsmeny-->
+            <nav role="navigation">
                 <ul class="globalmeny">
                     <li> <a href="Startsida.html"> Startsida</a></li>
                     <li> <a href="Länder.html"> Inblandade länder</a></li>
-                    <li> <a class="active" href="Viktigaslag.html"> Viktiga slag</a></li>
+                    <li> <a href="Viktigaslag.html"> Viktiga slag</a></li>
                     <li> <a href="Statistik.html"> Statistik</a></li>
                     <li> <a href="Förintelsen.html"> Förintelsen</a></li>
                     <li> <a href="Sverigeww2.html"> Sverige under kriget</a></li>
@@ -31,43 +33,61 @@
         </div>
     </div>
 </header>
-    <main>
-
+    <!--huvudinnehåll med olika titlar och stycken-->
+    <main role="main">
             <div class="container">
                  <img class="bildegenskaper" src="https://www.abmc.gov/sites/default/files/styles/slide_hero/public/galleries/_M6B6687_1.jpg?itok=s9bFu6m2" alt="amerikansk militärkyrkogård">
-                    <div class="grå-ruta"> 
+                    <div class="grå-ruta-stor"> 
                         <h1> Tidslinje</h1>
-                        
+                        <h3> Invasionen av Polen (1939)</h3>
+                        <p> Detta var startskottet på andra världskriget, det var egentligen ingen stor kamp, då Tyskland hade det militära överläget på alla sätt. Genom blitzkrieg så tog Tyskland över Polen väldigt fort. Bara 2 dager senare den tredje september så förklarade Frankrike och Storbritannien krig mot Tyskland.</p>
+                        <h3> Operation Barbarossa (1941)</h3>
+                        <p> Operation Barbarossa var lite av ett överraskningsmoment från Tyskland, det var ett kodnamn för invasionen av Sovjetunionen. Tyskland gick in med 4,5 miljoner soldater i Sovjetunionen, Tyskland lyckades pressa långt in i landet men lyckades aldrig besegra Sovjetunionen fullt ut. </p>
+                        <h3> Pearl Harbor (1941)</h3>
+                        <p> På morgonen den 7 december 1941 så utförde Japan ett flyganfall mot marinbasen Pearl Harbor på Hawaii. En dag senare så förklarade USA krig mot Japan och gick på det viset med i andra världskriget. Detta blev en stor vändpunkt i kriget då en stormakt som USA gick med i de allierade.</p>                        
+                        <h3> Stalingrad (1942-1943)</h3>
+                        <p> Striderna vid Stalingrad pågick under ungefär ett halvår och var en av de största vändpunkterna under andra världskriget. Det är få slag genom historien som har varit lika blodiga som striderna som ledde fram till slaget vid Stalingrad, nästan 2 miljoner människor miste livet i striden. Arméerna stred i väldigt tuffa förhållanden i kyla och snö, som Sovjet var betydligt mer förberedda för. Tillslut så kunde inte tyskarna hålla emot längre och var tvungna att kapitulera den 2 februari 1943.</p>
+                        <h3> Landstigningen i Normandie: D-dagen(1944)</h3>
+                        <p> Den 6 juni 1944 så landsteg de allierade i Normandie, Frankrike. Man lyckades bryta sig igenom det tyska försvaret och på det viset öppnade man en västfront. Nu behövde återigen tyskarna strida på två fronter som under första världskriget. Detta gjorde det oundvikligt för att tyskarna att slutligen förlora kriget. </p>
+                        <h3> Avslutet på kriget </h3>
+                        <p> Spiken i kistan blev att sovjetiska trupper gjorde sin sista offensiv in i Berlin i mars 1945. Resultatet av detta blev att Adolf Hitler begår självmord i en bunker. Striderna mellan Japan och USA pågick några månader till innan USA släpper två atombomber över de japanska städerna Hiroshima och Nagasaki. Detta avslutar andra världskriget abrupt och den 2 september, 1945 så kapitulerar Japan och kriget är över.</p>
                     </div>
             </div>
+    <!-- lokal meny -->
      <nav>
-             <ui class="lokalmeny">
-                <li> <a href="Viktigaslag.html">Viktiga slag startsida</a> </li>
-                <li> <a class ="lokalmenyactive" href="Tidslinje.html">Tidslinje viktiga slag</a> </li>
-               
-            </ui>
+         <ul class="lokalmeny">
+            <li> <a href="Viktigaslag.html">Viktiga slag startsida</a> </li>
+            <li> <a class ="lokalmenyactive" href="Tidslinje.html">Tidslinje viktiga slag</a> </li>               
+        </ul>
     </nav>            
-
-    <footer>
-        <div class="wrapper">
-            <ul class="footermeny">
-                <li> <a href="Startsida.html"> Startsida</a></li>
-                <li> <a href="Länder.html"> Inblandade länder</a></li>
-                <li> <a href="Viktigaslag.html"> Viktiga slag</a></li>
-                <li> <a href="Statistik.html"> Statistik</a></li>
-                <li> <a href="Förintelsen.html"> Förintelsen</a></li>
-                <li> <a href="Sverigeww2.html"> Sverige under kriget</a></li>
-                <li> <a href="Efterkriget.html"> Efter kriget</a></li>
-            </ul>
-        </div>
-    </footer>
-
-
-    </main>
-
-    <aside>
-        
-
-    <aside>
+</main>
+    <!--footer med form och navigation-->
+    <footer role="contentinfo">
+            <div class="wrapper">
+                <ul class="footermeny">
+                    <li> <a href="Startsida.html"> Startsida</a></li>
+                    <li> <a href="Länder.html"> Inblandade länder</a></li>
+                    <li> <a href="Viktigaslag.html"> Viktiga slag</a></li>
+                    <li> <a href="Statistik.html"> Statistik</a></li>
+                    <li> <a href="Förintelsen.html"> Förintelsen</a></li>
+                    <li> <a href="Sverigeww2.html"> Sverige under kriget</a></li>
+                    <li> <a href="Efterkriget.html"> Efter kriget</a></li>
+                </ul>
+            </div>
+                <p class="sidinformation"> Sida skapad av Lucas Andersson <br>
+                Mailadress: luan01001@utb.vaxjo.se</p>
+            <form class="navform" action="/action_page.php">
+                <fieldset>
+                    <legend> Logga in </legend>
+                    Användarnamn: 
+                    <input type="text" name="användarnamn">
+                    <br>
+                    Lösenord:
+                    <input type="password" name="lösenord">
+                    <br>
+                    <input class="submitknapp" type="submit" value="Logga in">       
+                </fieldset>
+            </form>
+        </footer>
 </body>
 </html>

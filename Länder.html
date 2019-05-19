@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,73 +9,95 @@
     <script src="main.js"></script>
     <title>Inblandade länder</title>
 </head>
+
+<!--header och navigationsmeny-->
 <body id="bakgrund3">
- <header>
-    <div class="header">
-        <div class="inre_header">
-            <div class="Rubrik">
-                <h1> Inblandade länder - Andra världskriget</h1>
-               
-            </div>
-            <nav>
+    <header role="banner">
+        <div class="header">
+            <div class="inre_header">
+                <div class="Rubrik">
+                    <h1> Inblandade länder - Andra världskriget</h1>               
+                </div>
+            <nav role="navigation">
                 <ul class="globalmeny">
                     <li> <a href="Startsida.html"> Startsida</a></li>
                     <li> <a class="active" href="Länder.html"> Inblandade länder</a></li>
                     <li> <a href="Viktigaslag.html"> Viktiga slag</a></li>
-                    <li> <a href="#"> Statistik</a></li>
-                    <li> <a href="#"> Förintelsen</a></li>
-                    <li> <a href="#"> Sverige under kriget</a></li>
-                    <li> <a href="#"> Efter kriget</a></li>
+                    <li> <a href="Statistik.html"> Statistik</a></li>
+                    <li> <a href="Förintelsen.html"> Förintelsen</a></li>
+                    <li> <a href="Sverigeww2.html"> Sverige under kriget</a></li>
+                    <li> <a href="Efterkriget.html"> Efter kriget</a></li>
                 </ul> 
             </nav>
         </div>
     </div>
 </header>
-<main>
+<main role="main">
+    <!--trespaltslayout med tre lika stora kolumner-->
     <div class="rader"> 
+        <!--vänster kolumn-->
         <div class="column allierade">
             <h1>De allierade</h1>
-            <p> De tre länderna som startade alliansen var Frankrike, Polen och Storbritannien med tanken att skydda varandra om något land skulle bli attackerat av Nazityskland. <br><br> Grunden i de allierade blev senare de "stora fyra", dessa fyra var: USA, Sovjetunionen, Storbritannien samt Kina. Anledningen till varför länder som till exempel Frankrike och Polen inte var med är att de blev ockuperade väldigt tidigt. <br> <br>  Ledarna av de stora fyra: </p>
+            <p> De tre länderna som startade alliansen var Frankrike, Polen och Storbritannien med tanken att skydda varandra om något land skulle bli attackerat av Nazityskland. </p>
+            <p> Grunden i de allierade blev senare de "stora fyra", dessa fyra var: USA, Sovjetunionen, Storbritannien samt Kina. Anledningen till varför länder som till exempel Frankrike och Polen inte var med är att de blev ockuperade väldigt tidigt </p>
+            <h4> Ledarna av de stora fyra:</h4>
             <ul> 
                 <li> Sovjetunionen: Josef Stalin </li>
                 <li> USA: Franklin D. Roosevelt </li>
                 <li> Storbritannien: Winston Churchill </li>
                 <li> Kina: Chiang Kai-shek </li>
-            <ul>
-                <img class="allieradeflaggor" src="allierade.png" alt="allierade flaggor"> 
-             
+            </ul>
+                <img class="allieradeflaggor" src="allierade.png" alt="allierade flaggor">  
         </div>
+    </div>
+        <!--mitten kolumn-->
         <div class="column introduktion">
             <h1>Inblandade länder</h1>
-            <p> Det fanns två primära sidor som stred mot varandra under kriget, axelmakterna och de allierade. Under krigets gång så både tillkom det nya länder samt vissa länder bytte sida. Det fanns många anledningar till varför olika länder hamnade i allianser med respektive sida. Det kunde delvis bero på att försöka skada sitt land så lite som möjligt, utan att nödvändigtvis sympatisera med sin sida. <br> <br> Det är svårt att faktorisera alla länder till 100%, till vänster och höger så kan du i stora drag se vilka länder som tillhörde vilken sida.</p>
+            <p> Det fanns två primära sidor som stred mot varandra under kriget, axelmakterna och de allierade. Under krigets gång så både tillkom det nya länder samt vissa länder bytte sida. Det fanns många anledningar till varför olika länder hamnade i allianser med respektive sida. Det kunde delvis bero på att försöka skada sitt land så lite som möjligt, utan att nödvändigtvis sympatisera med sin sida. </p>
+            <p> Det är svårt att faktorisera alla länder till 100%, till vänster och höger så kan du i stora drag se vilka länder som tillhörde vilken sida.</p>
         </div>
+        <!--höger kolumn-->
         <div class="column axelmakterna">
             <h1>Axelmakterna</h1>
-            <p> Tyskland var det landet som startade andra världskriget och redan tre år innan, sommaren 1936, kom en skriftlig förklaring av allians mellan Tyskland och Italien. Det dröjde bara en månad innan Japan gjorde sig en del av axelmakterna.</p> <br> <p> Ledarna över axelmakterna: </p>
+            <p> Tyskland var det landet som startade andra världskriget och redan tre år innan, sommaren 1936, kom en skriftlig förklaring av allians mellan Tyskland och Italien. Det dröjde bara en månad innan Japan gjorde sig en del av axelmakterna.</p>
+            <p> Ledarna över axelmakterna: </p>
             <ul> 
                 <li> Tyskland: Adolf Hitler</li>
                 <li> Italien: Benito Mussolini </li>
                 <li> Japan: Hirohito</li>
-            <ul>
+            </ul>
+            <figure>
                 <img src="axelmakterna.png" alt="axelmakterna flaggor">
+            </figure>
         </div>
-    </div>
 </main>
-
-<footer>
+    <!--footer med navigationsmeny, form och kontaktuppgifter-->
+    <footer role="contentinfo">
         <div class="wrapper">
             <ul class="footermeny">
                 <li> <a href="Startsida.html"> Startsida</a></li>
                 <li> <a href="Länder.html"> Inblandade länder</a></li>
                 <li> <a href="Viktigaslag.html"> Viktiga slag</a></li>
-                <li> <a href="#"> Statistik</a></li>
-                <li> <a href="#"> Förintelsen</a></li>
-                <li> <a href="#"> Sverige under kriget</a></li>
-                <li> <a href="#"> Efter kriget</a></li>
+                <li> <a href="Statistik.html"> Statistik</a></li>
+                <li> <a href="Förintelsen.html"> Förintelsen</a></li>
+                <li> <a href="Sverigeww2.html"> Sverige under kriget</a></li>
+                <li> <a href="Efterkriget.html"> Efter kriget</a></li>
             </ul>
         </div>
-    </footer>
-
-    
+            <p class="sidinformation"> Sida skapad av Lucas Andersson <br>
+            Mailadress: luan01001@utb.vaxjo.se</p>
+        <form class="navform" action="/action_page.php">
+            <fieldset>
+                <legend> Logga in </legend>
+                Användarnamn: 
+                <input type="text" name="användarnamn">
+                <br>
+                Lösenord:
+                <input type="password" name="lösenord">
+                <br>
+                <input class="submitknapp" type="submit" value="Logga in">   
+            </fieldset>
+        </form>
+    </footer>    
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,46 +10,46 @@
     <title> Statistik </title>
 </head>
 <body>
-        <header>
-           <div class="header">
-               <div class="inre_header">
-                   <div class="Rubrik">
-                       <h1> Statistik - Andra världskriget</h1>
-                      
-                   </div>
-                   <nav>
-                       <ul class="globalmeny">
-                           <li> <a href="Startsida.html"> Startsida</a></li>
-                           <li> <a href="Länder.html"> Inblandade länder</a></li>
-                           <li> <a href="Viktigaslag.html"> Viktiga slag</a></li>
-                           <li> <a class="active" href="Statistik.html"> Statistik</a></li>
-                           <li> <a href="Förintelsen.html"> Förintelsen</a></li>
-                           <li> <a href="Sverigeww2.html"> Sverige under kriget</a></li>
-                           <li> <a href="Efterkriget.html"> Efter kriget</a></li>
-                       </ul> 
-                   </nav>
-               </div>
-           </div>
-       </header>
-           <main>
-       
-                   <div class="container">
-                        <img class="bildegenskaper" src="https://www.tun-tun.com/wp-content/uploads/world-war-2-powerpoint-template-of-world-war-1-background-basic-world-war-2-powerpoint-template.jpg" alt="militär som går över gräsfält">
-                           <div class="grå-ruta"> 
-                               <br>
-                                    <h1> Statistik</h1>
-                               <br>
-                                    <p> Under andra världskriget så dog miljontals människor, både militär och civila. Det fanns varienande faktorer och det varierar stort hur många som dog i varje land. Här nedan finns intressant statistik om andra världskriget. </p>
-                               <br> 
-                                    Antal dödsfall per land under kriget (1939-1945):
-                                    <br>
-                                    <table> 
+     <header role="banner">
+        <div class="header">
+            <div class="inre_header">
+                <div class="Rubrik">
+                <h1> Statistik - Andra världskriget</h1>                
+                </div>
+                <!--navigationsmeny-->
+                <nav role="navigation">
+                    <ul class="globalmeny">
+                        <li> <a href="Startsida.html"> Startsida</a></li>
+                        <li> <a href="Länder.html"> Inblandade länder</a></li>
+                        <li> <a href="Viktigaslag.html"> Viktiga slag</a></li>
+                        <li> <a class="active" href="Statistik.html"> Statistik</a></li>
+                        <li> <a href="Förintelsen.html"> Förintelsen</a></li>
+                        <li> <a href="Sverigeww2.html"> Sverige under kriget</a></li>
+                        <li> <a href="Efterkriget.html"> Efter kriget</a></li>
+                    </ul> 
+                </nav>
+            </div>
+        </div>
+    </header>
+            <!--huvudinnehåll med en tabell-->
+           <main role="main">      
+                <div class="container">
+                    <img class="bildegenskaper" src="https://www.tun-tun.com/wp-content/uploads/world-war-2-powerpoint-template-of-world-war-1-background-basic-world-war-2-powerpoint-template.jpg" alt="militär som går över gräsfält">
+                        <div class="grå-ruta-stor">                            
+                            <h1> Statistik</h1>                   
+                            <p> Under andra världskriget så dog miljontals människor, både militär och civila. Det fanns varienande faktorer och det varierar stort hur många som dog i varje land. Här nedan finns intressant statistik om andra världskriget. </p>
+                                <table> 
+                                    <caption> Antal dödsfall per land under kriget (1939-1945):  </caption>
+                                        <thead>
+                                            <!--de fyra olika kolumnerna-->
                                         <tr>
-                                            <th> Land </th>
-                                            <th> Militär </th>
-                                            <th> Civila </th>
-                                            <th> Totalt </th>
+                                            <th scope="col"> Land </th>
+                                            <th scope="col"> Militär </th>
+                                            <th scope="col"> Civila </th>
+                                            <th scope="col"> Totalt </th>
                                         </tr>
+                                        </thead>
+                                        <tbody>
                                         <tr>
                                             <td> Sovjetunionen </td>
                                             <td> 12 miljoner </td>
@@ -92,27 +92,44 @@
                                             <td> 7.7 miljoner </td>
                                             <td> 9 miljoner </td>
                                         </tr>
-                                    </table>
-
-                           </div>
-                   </div>  
-       
-           <footer>
-               <div class="wrapper">
-                   <ul class="footermeny">
-                       <li> <a href="Startsida.html"> Startsida</a></li>
-                       <li> <a href="Länder.html"> Inblandade länder</a></li>
-                       <li> <a href="Viktigaslag.html"> Viktiga slag</a></li>
-                       <li> <a href="Statistik.html"> Statistik</a></li>
-                       <li> <a href="Förintelsen.html"> Förintelsen</a></li>
-                       <li> <a href="Sverigeww2.html"> Sverige under kriget</a></li>
-                       <li> <a href="Efterkriget.html"> Efter kriget</a></li>
-                   </ul>
-               </div>
-           </footer>
-       
-       
-        </main>
-       
-    </body>
+                                        </tbody>
+                                </table>
+                            </div>
+                    </div>  
+             </main>
+            <!-- sektion med youtube video (iframe) -->
+            <section>
+                <h4 class="sectionrubrik"> Schwerer Gustav </h4>
+                <p class="statistiktext"> Utöver statistiken så brukar krigsföring resultera i utveckling av olika vetenskaper, till exempel medicin och vapen. Ett exempel på vapenutveckligen var "80 cm järnvägskanon". Här nedan finns en bra video på denna kanon:</p>
+                <iframe src="https://www.youtube.com/embed/GGPxesCB8ns"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+            </section>         
+            <!--footer med navigation och form-->
+            <footer role="contentinfo">
+                <div class="wrapper">
+                    <ul class="footermeny">
+                        <li> <a href="Startsida.html"> Startsida</a></li>
+                        <li> <a href="Länder.html"> Inblandade länder</a></li>
+                        <li> <a href="Viktigaslag.html"> Viktiga slag</a></li>
+                        <li> <a href="Statistik.html"> Statistik</a></li>
+                        <li> <a href="Förintelsen.html"> Förintelsen</a></li>
+                        <li> <a href="Sverigeww2.html"> Sverige under kriget</a></li>
+                        <li> <a href="Efterkriget.html"> Efter kriget</a></li>
+                    </ul>
+                </div>
+                    <p class="sidinformation"> Sida skapad av Lucas Andersson <br>
+                    Mailadress: luan01001@utb.vaxjo.se</p>
+                    <form class="navform" action="/action_page.php">
+                        <fieldset>
+                            <legend> Logga in </legend>
+                            Användarnamn: 
+                            <input type="text" name="användarnamn">
+                            <br>
+                            Lösenord:
+                            <input type="password" name="lösenord">
+                            <br>
+                            <input class="submitknapp" type="submit" value="Logga in">                        
+                        </fieldset>
+                    </form>
+            </footer>  
+</body>
 </html>

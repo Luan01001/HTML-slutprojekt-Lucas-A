@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="ww2.css">
+    <script src="main.js"></script>
+    <title>Sverige under kriget</title>
+</head>
+<body id="bakgrund4">
+ <header role="banner">
+    <div class="header">
+        <div class="inre_header">
+            <div class="Rubrik">
+                <h1> Sverige under kriget - Andra världskriget</h1>              
+            </div>
+            <nav role="navigation">
+                <ul class="globalmeny">
+                    <li> <a href="Startsida.html"> Startsida</a></li>
+                    <li> <a href="Länder.html"> Inblandade länder</a></li>
+                    <li> <a href="Viktigaslag.html"> Viktiga slag</a></li>
+                    <li> <a href="Statistik.html"> Statistik</a></li>
+                    <li> <a href="Förintelsen.html"> Förintelsen</a></li>
+                    <li> <a class="active" href="Sverigeww2.html"> Sverige under kriget</a></li>
+                    <li> <a href="Efterkriget.html"> Efter kriget</a></li>
+                </ul> 
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- huvudinnehåll-->
+<main role="main">
+    <div class="rader"> 
+        <div class="column vänsterswe">
+            <h1> Sverige under andra världskriget</h1>
+            <p> Till skillnad från många andra länder i världen så förblev Sverige neutralt under hela andra världskriget, men det var inte helt lätt. Att förbli neutral är inte helt lätt, Sverige var tvunget att göra uppoffringar för att hålla sig väl med både de allierade och axelmakterna. Det man gjorde bland annat var att sälja järnmalm till Tyskland och kullager till Storbritannien.</p>
+            <p> Rent militärmässigt så var inte Sverige rustat för krig överhuvudtaget, man hade dock relativt bra beredskap och reserver när det gällde mat och bränsle till exempel. Sveriges dåvarande statsminister hade namnet Per Albin Hansson och var i grunden socialdemokrat. Under hela kriget så hade Sverige dock en samlingsregering, detta innebar att alla riksdagspartierna (förutom kommunisterna) var deltagande i regeringen. Målet med detta var att helt enkelt klara av kriget och försörja folket.</p>
+            <p> Under början av 1940-talet så blev både Danmark och Norge ockuperat av Tyskland, detta innebär att pressen höjdes och risken för ett anfall på Sverige ökade. För att behålla neutraliteten så var den svenska regeringen tvungna att gå med på många tyska krav. Bland annat att låta tyska material och soldater transporteras genom Sverige.</p>
+            <h3>Om du vill lära dig mer, lyssna på ljudfilen här under:</h3>
+                <!--ljudfil-->
+                <audio controls>
+                    <source src ="Sverigeww2.mp3" type="audio/mpeg">
+                </audio>
+                <!--animerad sverigeflagga-->
+            <div class="animation"> 
+                <img class="flaggstorlek" src="sverigeflagga.png" alt="Sverige flagga">
+            </div>    
+        </div>
+    </div>
+</main>
+<aside>
+    <div class="rader"> 
+        <div class="column högerswe">
+            <!--stort formulär med flertal funktioner-->
+            <form action="/action_page.php" method="GET">
+                <fieldset>
+                    <legend> Information </legend>
+                    <!--Namn med typ text-->
+                    Förnamn:<br>
+                    <input type="text" name="förnamn" placeholder="Förnamn" required><br>
+                    Efternamn:<br>
+                    <input type="text" name="efternamn" placeholder="Efternamn" required><br> 
+                    <!-- kön med typ radio där man checkar i ett alternativ-->
+                    Kön:<br>
+                    <input type="radio" name="kön" value="Man" checked> Man
+                    <input type="radio" name="kön" value="Kvinna"> Kvinna
+                    <input type="radio" name="kön" value="Annat"> Annat<br>
+                    <!--checkrutor där man kan klicka i flera alternativ-->
+                    Välj din/dina favoriter: <br>
+                    <input type="checkbox" name="alt1" value="Armé"> Armé<br>
+                    <input type="checkbox" name="alt2" value="Flotta"> Flotta<br>
+                    <input type="checkbox" name="alt3" value="Luftvapen"> Luftvapen<br>
+                    <!-- Dropdown ruta där man enbart kan välja ett alternativ-->
+                    Välj en del i Sverige: <br>
+                    <select name="landdel">
+                        <option value="norrland"> Norrland</option>
+                        <option value="svealand"> Svealand</option>
+                        <option value="götaland" selected> Götaland</option>
+                    </select>
+                    <br>
+                    <!-- ge hemsidan ett betyg, går inte över 10, blir rött runt om man skriver över 10-->
+                    Hemsidans betyg 1-10
+                    <input type="number" name="betyg" min="1" max="10">
+                    <br>
+                    E-mail: <input type="email" placeholder="Mailadress" name="emailaddress">
+                    <br>
+                    <button type="submit" value="Submit">Skicka</button>
+                </fieldset>
+            </form>        
+        </div>
+    </div>
+</aside>
+<!-- footer med form och navigationsmeny-->
+<footer role="contentinfo">
+    <div class="wrapper">
+        <ul class="footermeny">
+            <li> <a href="Startsida.html"> Startsida</a></li>
+            <li> <a href="Länder.html"> Inblandade länder</a></li>
+            <li> <a href="Viktigaslag.html"> Viktiga slag</a></li>
+            <li> <a href="Statistik.html"> Statistik</a></li>
+            <li> <a href="Förintelsen.html"> Förintelsen</a></li>
+            <li> <a href="Sverigeww2.html"> Sverige under kriget</a></li>
+            <li> <a href="Efterkriget.html"> Efter kriget</a></li>
+        </ul>
+    </div>
+        <p class="sidinformation"> Sida skapad av Lucas Andersson <br>
+         Mailadress: luan01001@utb.vaxjo.se</p>
+        <form class="navform" action="/action_page.php">
+            <fieldset>
+                <legend> Logga in </legend>
+                 Användarnamn: 
+                <input type="text" name="användarnamn">
+                <br>
+                Lösenord:
+                <input type="password" name="lösenord">
+                 <br>
+                <input class="submitknapp" type="submit" value="Logga in">
+            </fieldset>
+        </form>
+</footer>    
+</body>
+</html>

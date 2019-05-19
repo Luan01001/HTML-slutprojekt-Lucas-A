@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +9,17 @@
     <script src="main.js"></script>
     <title>Viktiga slag - startsida</title>
 </head>
+
 <body>
- <header>
+ <header role="banner">
     <div class="header">
         <div class="inre_header">
             <div class="Rubrik">
                 <h1> Viktiga slag - Andra världskriget</h1>
                
             </div>
-            <nav>
+            <!-- navigationsmeny -->
+            <nav role="navigation">
                 <ul class="globalmeny">
                     <li> <a href="Startsida.html"> Startsida</a></li>
                     <li> <a href="Länder.html"> Inblandade länder</a></li>
@@ -31,43 +33,51 @@
         </div>
     </div>
 </header>
-    <main>
-
+    <main role="main">
             <div class="container">
                  <img class="bildegenskaper" src="https://2.bp.blogspot.com/-b6QnpK3G4Lc/WtqyZ7eCjPI/AAAAAAAAP4g/iZplNX7UnqY0nAAHLHIh-S4zUwDiOuwpACLcBGAs/s1600/Invasion_of_Poland%2B%25286%2529.jpg" alt="stridsfäldtbakgrund">
                     <div class="grå-ruta"> 
                         <h1> Viktiga slag startsida</h1>
-                        
+                        <p> Under hela andra världskriget så pågick många saker, framför allt olika slag som fick olika betydelse. Det fanns vissa slag som blev vändpunkter i kriget. Här nedan finner du en bild på en tidslinje, klicka in på länken i menyn till vänster för att se en djupare förklaring av viktiga händelser.</p>
+                        <img src="https://slideplayer.se/slide/2694963/10/images/8/Tidslinje.jpg" alt="tidslinje andra världskriget">
                     </div>
             </div>
-     <nav>
-             <ui class="lokalmeny">
+        <!--lokal meny som leder till tidslinje sidan-->
+        <nav>
+             <ul class="lokalmeny">
                 <li> <a class ="lokalmenyactive" href="Viktigaslag.html">Viktiga slag startsida</a> </li>
-                <li> <a href="Tidslinje.html">Tidslinje viktiga slag</a> </li>
-               
-            </ui>
-    </nav>            
-
-    <footer>
-        <div class="wrapper">
-            <ul class="footermeny">
-                <li> <a href="Startsida.html"> Startsida</a></li>
-                <li> <a href="Länder.html"> Inblandade länder</a></li>
-                <li> <a href="Viktigaslag.html"> Viktiga slag</a></li>
-                <li> <a href="Statistik.html"> Statistik</a></li>
-                <li> <a href="Förintelsen.html"> Förintelsen</a></li>
-                <li> <a href="Sverigeww2.html"> Sverige under kriget</a></li>
-                <li> <a href="Efterkriget.html"> Efter kriget</a></li>
+                <li> <a href="Tidslinje.html">Tidslinje viktiga slag</a> </li>               
             </ul>
-        </div>
-    </footer>
-
-
+        </nav>            
     </main>
+    <!-- footer -->
+    <footer role="contentinfo">
+            <div class="wrapper">
+                <ul class="footermeny">
+                    <li> <a href="Startsida.html"> Startsida</a></li>
+                    <li> <a href="Länder.html"> Inblandade länder</a></li>
+                    <li> <a href="Viktigaslag.html"> Viktiga slag</a></li>
+                    <li> <a href="Statistik.html"> Statistik</a></li>
+                    <li> <a href="Förintelsen.html"> Förintelsen</a></li>
+                    <li> <a href="Sverigeww2.html"> Sverige under kriget</a></li>
+                    <li> <a href="Efterkriget.html"> Efter kriget</a></li>
+                </ul>
+            </div>
+                <p class="sidinformation"> Sida skapad av Lucas Andersson <br>
+                Mailadress: luan01001@utb.vaxjo.se</p>
+            <form class="navform" action="/action_page.php">
+                <fieldset>
+                    <legend> Logga in </legend>
+                    Användarnamn: 
+                    <input type="text" name="användarnamn">
+                    <br>
+                    Lösenord:
+                    <input type="password" name="lösenord">
+                    <br>
+                    <input class="submitknapp" type="submit" value="Logga in">      
+                </fieldset>
+            </form>
+        </footer>
 
-    <aside>
-        
-
-    <aside>
 </body>
 </html>
